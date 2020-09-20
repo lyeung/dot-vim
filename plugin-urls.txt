@@ -1,0 +1,17 @@
+https://github.com/mileszs/ack.vim.git
+https://github.com/ctrlpvim/ctrlp.vim.git
+https://github.com/mattn/emmet-vim.git
+https://github.com/yegappan/greplace
+https://github.com/scrooloose/nerdtree.git
+https://github.com/liuchengxu/space-vim-dark.git
+https://github.com/dmac/vim-cljfmt
+https://github.com/guns/vim-clojure-static.git
+https://github.com/ajmwagar/vim-deus.git
+https://github.com/tpope/vim-fireplace.git
+https://github.com/tpope/vim-fugitive.git
+https://github.com/fatih/vim-go.git
+https://github.com/pangloss/vim-javascript.git
+https://github.com/prettier/vim-prettier.git
+https://github.com/tpope/vim-salve.git
+https://github.com/tpope/vim-surround
+https://github.com/stephpy/vim-yaml

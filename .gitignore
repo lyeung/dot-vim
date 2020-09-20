@@ -1,0 +1,7 @@
+# working directory
+working-dir/
+
+# vim files
+*~
+*.swp
+*.swo

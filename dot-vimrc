@@ -1,0 +1,30 @@
+set nocompatible
+execute pathogen#infect()
+"syntax enable
+filetype plugin indent on
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd FileType javascript,json,css,html setlocal ts=2 sts=2 sw=2
+autocmd vimenter * NERDTree | wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+colorscheme morning
+"let g:space_vim_dark_background = 233
+"colorscheme space-vim-dark
+"let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+"let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+"hi Comment guifg=#5C6370 ctermfg=59
+"hi LineNr ctermbg=NONE guibg=NONE
+
+set nu! rnu!
+let mapleader=","
+let g:ackpg="ack -H --nocolor --nogroup --column"
+nmap <leader>j mA:Ack<space>
+nmap <leader>ja mA:Ack "<C-r>=expand("<cword>")<cr>"
+nmap <leader>jA mA:Ack "<C-r>=expand("<cWORD>")<cr>"
+let g:ctrlp_map='<leader>c'
+let g:ctrlp_show_hidden=1
+let g:ctrlp_custom_ignore='node_modules\|git'
+
+"prettier
+let g:prettier#exec_cmd_async=1
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
